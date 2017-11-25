@@ -1,0 +1,19 @@
+
+.grid__col--3{
+  @include flexy(column);
+  & a {
+    @include flexy(column);
+    @include flexy-item(center);
+  }
+}
+
+.nav {
+  @include flexy(column);
+}
+
+.nav__item {
+  @include flexy-item(center);
+  & a {
+   @include link-reset($black);
+  }
+}
