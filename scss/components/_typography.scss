@@ -1,4 +1,13 @@
 
 p {
   font-family: $helvetica-font-stack;
+  word-spacing: $letter-space;
+}
+
+.headline--primary {
+  @extend %hdln-prim;
+}
+
+.link {
+  @include link-reset($malibu, $helvetica-font-stack);
 }

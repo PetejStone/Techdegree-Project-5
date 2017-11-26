@@ -24,6 +24,9 @@ html {
 
 body {
   margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+
 }
 
 /**
@@ -78,6 +81,11 @@ hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
+}
+
+//Resets padding on left of ul elements
+ul {
+  padding: 0;
 }
 
 /**

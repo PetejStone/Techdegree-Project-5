@@ -18,14 +18,29 @@ $bright-turquoise: #25E3F8;
 $burning-sand: #DE887D;
 $white: #fff;
 $black: #000;
+$light-grey: #f9f9f9;
 
-//======================
-//Font-Stacks
-//========================
+
 
 //Font URL
 $font-url-google: 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
 //
+//=============
+//Font Weight
+//===============
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+//======================
+//Font-Stacks
+//=====================
+
+
 // Serif font-stacks
 //
 
@@ -86,6 +101,16 @@ $merriweather-font-stack: 'Merriweather', serif !default;
 $merriweather-sans-font-stack: 'Merriweather Sans', sans-serif !default;
 $quattrocento-font-stack: 'Quattrocento', serif !default;
 $quattrocento-sans-font-stack: 'Quattrocento Sans', sans-serif !default;
+
+///======
+//Text
+//========
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
 
 //===============
 //Breakpoints

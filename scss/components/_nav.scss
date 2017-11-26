@@ -1,19 +1,23 @@
 
 .grid__col--3{
-  @include flexy(column);
+  @include flexy(flex, column);
   & a {
-    @include flexy(column);
+    @include flexy(flex, column);
     @include flexy-item(center);
   }
 }
 
 .nav {
-  @include flexy(column);
+  @include flexy(flex, column);
 }
 
 .nav__item {
   @include flexy-item(center);
-  & a {
-   @include link-reset($black);
+    & a {
+   @extend %nav-item-link;
+   &:hover {
+     background-color: $aqua-green;
+     color: complement($aqua-green);
+   }
   }
 }

@@ -1,4 +1,19 @@
 
-.img--logo {
-  @include flexy;
+.img {
+
+  @include m(logo) {
+    @include flexy;
+}
+  @include m(frame) {
+    width: 100%;
+  }
+
+  @include m(avatar) {
+      width: 50%;
+      margin-bottom: 5em;
+      @include flexy(flex, column);
+      margin: 0 auto;
+
+  }
+
 }

@@ -1,0 +1,6 @@
+
+.form__label--hidden {
+  @include flexy(flex, column);
+  line-height: 24px;
+  margin-top: 2em;
+}

@@ -1,3 +1,26 @@
+.container {
+  margin-left: 1.2em;
+  margin-right: 1.2em; }
+
+.nav__item a {
+  font-weight: 100;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: inherit;
+  display: block;
+  padding: 1em 0;
+  text-decoration: none;
+  color: #000;
+  width: 90vw; }
+
+.headline--primary {
+  color: #57FAE1;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 1em;
+  margin-top: 0; }
+
 * {
   box-sizing: border-box; }
 
@@ -27,7 +50,9 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin-top: 1em; }
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em; }
 
 /**
  * Add the correct display in IE 9-.
@@ -74,6 +99,9 @@ hr {
   /* 1 */
   overflow: visible;
   /* 2 */ }
+
+ul {
+  padding: 0; }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -403,16 +431,40 @@ template {
 
 .nav__item {
   align-self: center; }
-  .nav__item a {
-    text-decoration: none;
-    list-style-type: none;
-    color: #000; }
+  .nav__item a:hover {
+    background-color: #8DFBBC;
+    color: #fb8dcc; }
 
 p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  word-spacing: 1px; }
+
+.link {
+  text-decoration: none;
+  list-style-type: none;
+  color: #6BDCFA;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.img--logo {
+.form__label--hidden {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  line-height: 24px;
+  margin-top: 2em; }
+
+.img--logo {
+  display: flex; }
+.img--frame {
+  width: 100%; }
+.img--avatar {
+  width: 50%;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.grid__col--4 {
+  float: none;
+  margin: 0 auto;
+  line-height: 80px; }
 
 /*# sourceMappingURL=styles.css.map */
