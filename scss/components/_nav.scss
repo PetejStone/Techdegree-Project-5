@@ -9,15 +9,12 @@
 
 .nav {
   @include flexy(flex, column);
+  @include margin-vert(0,2.5em);
 }
 
 .nav__item {
   @include flexy-item(center);
     & a {
    @extend %nav-item-link;
-   &:hover {
-     background-color: $aqua-green;
-     color: complement($aqua-green);
-   }
   }
 }

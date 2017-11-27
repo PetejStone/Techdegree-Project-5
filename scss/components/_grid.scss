@@ -7,6 +7,9 @@
   &__col--4 {
   @include centered;
   line-height: 80px;
+ }
 }
 
+.grid__row {
+  @include margin-vert(0em, 0);
 }

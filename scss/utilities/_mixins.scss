@@ -62,3 +62,47 @@
     @content;
   }
 }
+
+//Columns mixin
+
+@mixin g-columns {
+  @for $i from 1 through $g-col-count {
+
+  }
+}
+
+//Padding Mixins
+
+@mixin padding-vert($padding-top: null, $padding-bottom: null) {
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+}
+
+@mixin padding-horz($padding-left: null, $padding-right: null) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}
+
+//Margin mixins
+
+@mixin margin-vert($margin-top: null, $margin-bottom: null) {
+  padding-top: $margin-top;
+  padding-bottom: $margin-bottom;
+}
+
+@mixin margin-horz($margin-left: null, $margin-right: null) {
+  padding-left: $margin-left;
+  padding-right: $margin-right;
+}
+
+@mixin inputactive {
+  @if input == 'hello' {
+    background-color: $aquamarine;
+    width: 100%;
+    height: 2em;
+    border: none;
+  }
+  @else {
+    height: .5em;
+  }
+}

@@ -8,6 +8,26 @@ p {
   @extend %hdln-prim;
 }
 
+.headline--secondary {
+  @extend %hdln-sec;
+  @include margin-vert(2em,0);
+}
+
 .link {
   @include link-reset($malibu, $helvetica-font-stack);
+}
+
+.blockquote {
+  border-left: .5em solid $aquamarine;
+  border-radius: .3em;
+  padding-left: 1em;
+  font-family: $helvetica-font-stack;
+  font-weight: $font-weight--thin;
+  font-style: italic;
+}
+
+.form__label--hidden {
+  font-family: $helvetica-font-stack;
+  font-weight: $font-weight--bold;
+  text-decoration: none;
 }
