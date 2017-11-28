@@ -1,7 +1,5 @@
 
-.container {
-  @extend %mobile;
-}
+
 
 .grid {
   &__col--4 {
@@ -11,20 +9,55 @@
 
 .grid__row {
   margin-bottom: 4em;
+  @include mq(large){
+    @include flexy(flex, row);
+    justify-content: space-between;
+  }
 }
 
 @include grid(12,$cyan) {
+  width: 100%;
 }
+
+
+
 
 @include grid(6,$blue-lagoon) {
+  @include mq(large){
+    width: 100%;
+    justify-content: space-between;
+}
 }
 
-@include grid(4, $malibu);
+@include grid(4, $malibu) {
+  @include mq(large){
+  width: 100%;
+  justify-content: space-between;
+}
+}
 
-@include grid(3, $muave);
+@include grid(3, $muave) {
+  @include mq(large){
+  width: 100%;
+ justify-content: space-between;
+}
+}
 
-@include grid(5, $lima);
-
-@include grid(7, $burning-sand);
-
-@include grid(8, $tango);
+@include grid(5, $lima) {
+  @include mq(large){
+  width: 100%;
+ justify-content: space-between;
+}
+}
+@include grid(7, $burning-sand) {
+  @include mq(large){
+  width: 100%;
+ justify-content: space-between;
+}
+}
+@include grid(8, $tango) {
+  @include mq(large){
+  width: 100%;
+ justify-content: space-between;
+}
+}

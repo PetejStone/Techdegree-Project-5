@@ -1,0 +1,8 @@
+
+.container {
+  @extend %mobile;
+
+  @include mq(large){
+    max-width: 1000px;
+  }
+}
