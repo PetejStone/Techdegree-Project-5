@@ -95,14 +95,16 @@
   padding-right: $margin-right;
 }
 
-@mixin inputactive {
-  @if input == 'hello' {
-    background-color: $aquamarine;
-    width: 100%;
-    height: 2em;
-    border: none;
-  }
-  @else {
-    height: .5em;
+//grid col mixin
+
+@mixin grid($column, $color) {
+  .theme__colors.grid__col--#{$column}{
+    background-color: $color;
+    height: 3em;
+    padding-top: 1em;
+    padding-left: 1em;
+    border-radius: .4em;
+    margin-bottom: .5em;
+    @content;
   }
 }

@@ -9,7 +9,6 @@
 
 .nav {
   @include flexy(flex, column);
-  @include margin-vert(0,2.5em);
 }
 
 .nav__item {

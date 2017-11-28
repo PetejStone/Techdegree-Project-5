@@ -5,11 +5,26 @@
 
 .grid {
   &__col--4 {
-  @include centered;
-  line-height: 80px;
  }
+
 }
 
 .grid__row {
-  @include margin-vert(0em, 0);
+  margin-bottom: 4em;
 }
+
+@include grid(12,$cyan) {
+}
+
+@include grid(6,$blue-lagoon) {
+}
+
+@include grid(4, $malibu);
+
+@include grid(3, $muave);
+
+@include grid(5, $lima);
+
+@include grid(7, $burning-sand);
+
+@include grid(8, $tango);

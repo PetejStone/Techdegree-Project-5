@@ -19,6 +19,20 @@ $burning-sand: #DE887D;
 $white: #fff;
 $black: #000;
 $hdln-sec: #a1a1a1; /*mid-grey*/
+$light-grey: #c1c1c1; 
+
+  //Button Colors
+
+  $btn-colors: (
+    success:  $atlantis,
+    error:    $milano-red,
+    warning:  $blaze-orange,
+    info:     $seance,
+    default:  $bright-turquoise,
+  );
+
+
+
 
 
 

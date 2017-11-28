@@ -6,6 +6,9 @@
 }
   @include m(frame) {
     width: 100%;
+    padding: .75em;
+    border: 1px solid $light-grey;
+    margin-bottom: 1em;
   }
 
   @include m(avatar) {
