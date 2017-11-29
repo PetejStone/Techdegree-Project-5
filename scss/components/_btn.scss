@@ -2,6 +2,8 @@
 .btn {
   &--default {
     @extend %btn;
+    @include mq(large){
+    }
     background-color: $bright-turquoise;
 }
   &--success {
@@ -21,3 +23,11 @@
     background-color: $seance;
   }
 }
+
+
+//Button width modifier
+@include btn(default);
+@include btn(success);
+@include btn(error);
+@include btn(warning);
+@include btn(info);

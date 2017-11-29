@@ -1,63 +1,47 @@
 
+////=======Equation for giving grids equal space in gutters (margins)=========
+//Calculate for Grid Columns
+//===============================================================--
 
+@for $i from 1 through $g-col-count {
 
-.grid {
-  &__col--4 {
+  $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+  $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+
+  //Generate these classes
+
+  .grid__col--#{$i} {
+    width: 100%;
+    text-align: center;
+    @include mq(large){
+      width: percentage($target / $context);
+      margin: auto;
+      @include flexy(flex, row, none, space-between);
+  }
  }
-
 }
 
 .grid__row {
-  margin-bottom: 4em;
+  margin-bottom: 3em;
   @include mq(large){
     @include flexy(flex, row);
-    justify-content: space-between;
+    margin-top: 1em;
+    width: 100%;
   }
 }
 
-@include grid(12,$cyan) {
-  width: 100%;
-}
+//Colors for each grid
 
+@include grid(12,$cyan);
 
+@include grid(6,$blue-lagoon);
 
+@include grid(4, $malibu);
 
-@include grid(6,$blue-lagoon) {
-  @include mq(large){
-    width: 100%;
-    justify-content: space-between;
-}
-}
+@include grid(3, $muave);
 
-@include grid(4, $malibu) {
-  @include mq(large){
-  width: 100%;
-  justify-content: space-between;
-}
-}
+@include grid(5, $lima);
 
-@include grid(3, $muave) {
-  @include mq(large){
-  width: 100%;
- justify-content: space-between;
-}
-}
+@include grid(7, $burning-sand);
 
-@include grid(5, $lima) {
-  @include mq(large){
-  width: 100%;
- justify-content: space-between;
-}
-}
-@include grid(7, $burning-sand) {
-  @include mq(large){
-  width: 100%;
- justify-content: space-between;
-}
-}
-@include grid(8, $tango) {
-  @include mq(large){
-  width: 100%;
- justify-content: space-between;
-}
-}
+@include grid(8, $tango);

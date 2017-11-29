@@ -8,12 +8,26 @@
 }
 
 .nav {
+  @include centered;
+    width: 75%;
   @include flexy(flex, column);
-}
+    @include mq(large){
+      @include flexy(flex, row, none, space-between) {
 
-.nav__item {
-  @include flexy-item(center);
-    & a {
-   @extend %nav-item-link;
-  }
-}
+      }
+    }
+    @include e(item){
+      @include flexy-item(center);
+        a {
+          @extend %nav-item-link;
+          @extend %brdr-radius;
+          &:hover {
+            width: 90vw;
+          }
+         @include mq(large){
+         &:hover {
+           width: auto;
+           @include padding-horz(2em, 2em);
+         }
+    }
+  }}}

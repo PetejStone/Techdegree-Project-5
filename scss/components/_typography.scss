@@ -19,15 +19,9 @@ p {
 
 .blockquote {
   border-left: .5em solid $aquamarine;
-  border-radius: .3em;
+  @extend %brdr-radius;
   padding-left: 1em;
   font-family: $helvetica-font-stack;
   font-weight: $font-weight--thin;
   font-style: italic;
-}
-
-.form__label--hidden {
-  font-family: $helvetica-font-stack;
-  font-weight: $font-weight--bold;
-  text-decoration: none;
 }

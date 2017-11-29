@@ -23,13 +23,23 @@ $light-grey: #c1c1c1;
 
   //Button Colors
 
-  $btn-colors: (
-    success:  $atlantis,
-    error:    $milano-red,
-    warning:  $blaze-orange,
-    info:     $seance,
-    default:  $bright-turquoise,
-  );
+  // $btn-colors: (
+  //   $success:  $atlantis,
+  //   $error:    $milano-red,
+  //   $warning:  $blaze-orange,
+  //   $info:     $seance,
+  //   $default:  $bright-turquoise,
+  // );
+  //
+  // $grid-colors: (
+  //
+  //   col-3:    $atlantis,
+  //   col-4:    $milano-red,
+  //   col-5:    $blaze-orange,
+  //   col-6:    $seance,
+  //   col-7:    $burnt-sienna,
+  //   col-8:    $blue-lagoon,
+  // );
 
 
 
@@ -131,5 +141,14 @@ $letter-space    : 1px;
 //===============
 
 
-$brkpoint-sm: 480px;
+$brkpoint-sm: 400px;
 $brkpoint-lg: 769px;
+
+//============
+//Grid system
+//============
+
+$g-col-width          :65px;
+$g-gutter-width       :20px;
+$g-col-count          :12;
+$g-cont-max-w         :1000px;

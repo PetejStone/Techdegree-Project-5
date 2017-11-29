@@ -13,6 +13,7 @@
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
+  @content;
 }
 
 //flexbox mixins
@@ -28,7 +29,7 @@
   font-family: $font;
 }
 
-//space between content mixin
+
 
 
 //Media queries
@@ -41,8 +42,8 @@
   }
   @else if $size --'large' {
     @media (min-width: $brkpoint-lg) {
-      margin-left: 1.5em;
-      margin-right: 1.5em;
+      padding-left: 0em;
+      padding-right: 0em;
       @content;
     }
   }
@@ -65,13 +66,7 @@
   }
 }
 
-//Columns mixin
 
-@mixin g-columns {
-  @for $i from 1 through $g-col-count {
-
-  }
-}
 
 //Padding Mixins
 
@@ -93,8 +88,8 @@
 }
 
 @mixin margin-horz($margin-left: null, $margin-right: null) {
-  padding-left: $margin-left;
-  padding-right: $margin-right;
+  margin-left: $margin-left;
+  margin-right: $margin-right;
 }
 
 //grid col mixin
@@ -107,6 +102,18 @@
     padding-left: 1em;
     border-radius: .4em;
     margin-bottom: .5em;
+    text-align: center;
     @content;
   }
+}
+
+@mixin btn($btn) {
+.theme__colors.btn--#{$btn}{
+  @include mq(small){
+    width: 100%;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+}
 }
