@@ -1,8 +1,9 @@
 
 .card {
   p {
-  font-family: $helvetica-font-stack;
+  @extend %main-font;
   word-spacing: $letter-space;
+  text-align: left;
 }
 }
 .headline--primary {
@@ -21,8 +22,8 @@
 .blockquote {
   border-left: .5em solid $aquamarine;
   @extend %brdr-radius;
+  @extend %main-font;
   padding-left: 1em;
-  font-family: $helvetica-font-stack;
   font-weight: $font-weight--thin;
   font-style: italic;
   text-align: left;

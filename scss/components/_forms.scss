@@ -13,21 +13,26 @@
  }
 }
   @include e(input) {
+    @extend %main-font;
     background-color: $white;
-    border-bottom: 2px solid $aquamarine;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     width: 100%;
     height: 2rem;
-    border: none;
+    font-weight: $font-weight--bold;
     font-size: 1em;
+    border-bottom: 5px solid $aquamarine;
     &:focus,
     &:active {
       outline-color: complement($aquamarine);
       font-weight: $font-weight--bold;
       padding-left: 2em;
+      background-color: $canary;
     }
+
   }
 }
-
 //======= Form button isolated to keep width of 100%=======
 form button.btn--default.theme__colors {
   width: 100%;
@@ -35,11 +40,3 @@ form button.btn--default.theme__colors {
   margin-right: 0px;
 }
 //=========================================================
-
-input::placeholder {
-  font-size: 1em;
-  font-weight: bold;
-  font-family: $helvetica-font-stack;
-  padding-left: .5em;
-
-}

@@ -4,6 +4,9 @@
   margin-left: .8em;
   margin-right: .8em; }
 
+.card p, .blockquote, .form__input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .form__label--hidden {
   visibility: hidden; }
 
@@ -482,8 +485,8 @@ template {
           padding-right: 2em; } }
 
 .card p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  word-spacing: 1px; }
+  word-spacing: 1px;
+  text-align: left; }
 
 .headline--secondary {
   padding-top: 1em;
@@ -498,7 +501,6 @@ template {
 .blockquote {
   border-left: 0.5em solid #57FAE1;
   padding-left: 1em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-style: italic;
   text-align: left;
@@ -515,26 +517,24 @@ template {
   text-align: left; }
 .form__input {
   background-color: #fff;
-  border-bottom: 2px solid #57FAE1;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   width: 100%;
   height: 2rem;
-  border: none;
-  font-size: 1em; }
+  font-weight: 700;
+  font-size: 1em;
+  border-bottom: 5px solid #57FAE1; }
   .form__input:focus, .form__input:active {
     outline-color: #fa5770;
     font-weight: 700;
-    padding-left: 2em; }
+    padding-left: 2em;
+    background-color: #F2F65A; }
 
 form button.btn--default.theme__colors {
   width: 100%;
   margin-left: 0px;
   margin-right: 0px; }
-
-input::placeholder {
-  font-size: 1em;
-  font-weight: bold;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-left: .5em; }
 
 .img--logo {
   margin-bottom: .2em;
