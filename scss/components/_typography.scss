@@ -1,9 +1,10 @@
 
-p {
+.card {
+  p {
   font-family: $helvetica-font-stack;
   word-spacing: $letter-space;
 }
-
+}
 .headline--primary {
   @extend %hdln-prim;
 }
