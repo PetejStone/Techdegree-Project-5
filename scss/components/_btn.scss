@@ -1,4 +1,5 @@
 
+
 .btn {
   &--default {
     @extend %btn;
@@ -24,10 +25,15 @@
   }
 }
 
-// 
-// //Button width modifier
-// @include btn(default);
-// @include btn(success);
-// @include btn(error);
-// @include btn(warning);
-// @include btn(info);
+form button.btn--default.theme__colors {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+//Button width modifier
+@include btn(default);
+@include btn(success);
+@include btn(error);
+@include btn(warning);
+@include btn(info);

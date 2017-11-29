@@ -2,14 +2,16 @@
 .img {
 
   @include m(logo) {
+    margin-bottom: .2em;
     @include flexy;
 }
   @include m(frame) {
-    width: 100%;
+    @include centered;
+    width: 95%;
     padding: .75em;
     border: 1px solid $light-grey;
     margin-bottom: 1em;
-    margin-left: 1em;
+
   }
 
   @include m(avatar) {

@@ -1,7 +1,7 @@
 
-%mobile {
-  margin-left: 1.2em;
-  margin-right: 1.2em;
+%breathing-room {
+  margin-left: .8em;
+  margin-right: .8em;
 }
 
 %desktop {
@@ -59,6 +59,7 @@
   font-weight: $font-weight--thin;
   font-size: 1em;
   font-family: $helvetica-font-stack;
+  text-align: left;
 
 }
 
@@ -72,7 +73,7 @@
 //button placeholder
 
 %btn {
-  
+
   height: 4em;
   border: none;
   color: $white;

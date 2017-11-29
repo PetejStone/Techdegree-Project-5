@@ -99,21 +99,21 @@
     background-color: $color;
     height: 3em;
     padding-top: 1em;
-    padding-left: 1em;
     border-radius: .4em;
     margin-bottom: .5em;
     text-align: center;
     @content;
   }
 }
-// 
-// @mixin btn($btn) {
-// .theme__colors.btn--#{$btn}{
-//   @include mq(small){
-//     width: 100%;
-//     margin-left: 2em;
-//     margin-right: 2em;
-//   }
-//
-// }
-// }
+
+@mixin btn($btn) {
+.theme__colors.btn--#{$btn}{
+  @include mq(small){
+    width: 100%;
+    @content;
+    @include mq(large){
+      width: 15%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+}}}

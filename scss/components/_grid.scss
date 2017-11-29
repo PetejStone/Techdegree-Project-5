@@ -17,7 +17,6 @@
       width: percentage($target / $context);
       text-align: center;
       margin: auto;
-
   }
  }
 }
@@ -28,6 +27,7 @@
     @include flexy(flex, row);
     margin-top: 1em;
     width: 100%;
+    justify-content: space-between;
   }
 }
 
