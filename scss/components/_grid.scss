@@ -15,8 +15,9 @@
     text-align: center;
     @include mq(large){
       width: percentage($target / $context);
+      text-align: center;
       margin: auto;
-      @include flexy(flex, row, none, space-between);
+
   }
  }
 }

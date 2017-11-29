@@ -552,11 +552,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 6.5%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--2 {
   width: 100%;
@@ -566,11 +563,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 15%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--3 {
   width: 100%;
@@ -580,11 +574,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 23.5%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--4 {
   width: 100%;
@@ -594,11 +585,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 32%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--5 {
   width: 100%;
@@ -608,11 +596,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 40.5%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--6 {
   width: 100%;
@@ -622,11 +607,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 49%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--7 {
   width: 100%;
@@ -636,11 +618,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 57.5%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--8 {
   width: 100%;
@@ -650,11 +629,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 66%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--9 {
   width: 100%;
@@ -664,11 +640,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 74.5%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--10 {
   width: 100%;
@@ -678,11 +651,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 83%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--11 {
   width: 100%;
@@ -692,11 +662,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 91.5%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__col--12 {
   width: 100%;
@@ -706,11 +673,8 @@ input::placeholder {
       padding-left: 0em;
       padding-right: 0em;
       width: 100%;
-      margin: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: none;
-      justify-content: space-between; } }
+      text-align: center;
+      margin: auto; } }
 
 .grid__row {
   margin-bottom: 3em; }
@@ -800,36 +764,6 @@ input::placeholder {
   background-color: #FD680D; }
 .btn--info {
   background-color: #7C17AB; }
-
-@media (min-width: 400px) {
-  .theme__colors.btn--default {
-    width: 100%;
-    margin-left: 2em;
-    margin-right: 2em; } }
-
-@media (min-width: 400px) {
-  .theme__colors.btn--success {
-    width: 100%;
-    margin-left: 2em;
-    margin-right: 2em; } }
-
-@media (min-width: 400px) {
-  .theme__colors.btn--error {
-    width: 100%;
-    margin-left: 2em;
-    margin-right: 2em; } }
-
-@media (min-width: 400px) {
-  .theme__colors.btn--warning {
-    width: 100%;
-    margin-left: 2em;
-    margin-right: 2em; } }
-
-@media (min-width: 400px) {
-  .theme__colors.btn--info {
-    width: 100%;
-    margin-left: 2em;
-    margin-right: 2em; } }
 
 @media (min-width: 769px) {
   .container {

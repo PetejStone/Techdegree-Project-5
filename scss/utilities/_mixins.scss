@@ -106,14 +106,14 @@
     @content;
   }
 }
-
-@mixin btn($btn) {
-.theme__colors.btn--#{$btn}{
-  @include mq(small){
-    width: 100%;
-    margin-left: 2em;
-    margin-right: 2em;
-  }
-
-}
-}
+// 
+// @mixin btn($btn) {
+// .theme__colors.btn--#{$btn}{
+//   @include mq(small){
+//     width: 100%;
+//     margin-left: 2em;
+//     margin-right: 2em;
+//   }
+//
+// }
+// }
