@@ -15,6 +15,7 @@
   }
 
   @include m(avatar) {
+      max-width: 200px;
       width: 50%;
       margin-bottom: 5em;
       @include flexy(flex, column);

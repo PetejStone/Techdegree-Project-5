@@ -12,7 +12,7 @@
     width: 75%;
   @include flexy(flex, column);
     @include mq(large){
-      @include flexy(flex, row, none, space-between) {
+      @include flexy(flex, row, nowrap, space-between) {
 
       }
     }

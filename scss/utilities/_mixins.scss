@@ -42,8 +42,8 @@
   }
   @else if $size --'large' {
     @media (min-width: $brkpoint-lg) {
-      padding-left: 0em;
-      padding-right: 0em;
+      padding-left: 1em;
+      padding-right: 1em;
       @content;
     }
   }
